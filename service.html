@@ -62,11 +62,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About Us</a>
                     <a href="causes.html" class="nav-item nav-link">Causes</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
                             <a href="service.html" class="dropdown-item">Service</a>
                             <a href="donate.html" class="dropdown-item">Donate</a>
@@ -114,47 +114,393 @@
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">What We Do</div>
                 <h1 class="display-6 mb-5">Learn More What We Do And Get Involved</h1>
             </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
-                        <h4 class="mb-3">Child Education</h4>
-                        <p class="mb-4">Every child deserves the chance to learn, dream, and build a brighter future.</p>
-                        <a class="btn btn-outline-primary px-3" href="">
-                            Learn More
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                    </div>
+
+
+
+    <div class="row g-4 justify-content-center">
+
+    <!-- Education for Street Children Service -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+            <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
+            <h4 class="mb-3">Education for Street Children</h4>
+            <p class="mb-4">Every child deserves the chance to learn, dream, and build a brighter future.</p>
+            <button class="btn btn-outline-primary px-3" data-bs-toggle="modal" data-bs-target="#modalChildEducation">
+                Learn More
+                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                    <i class="fa fa-arrow-right"></i>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
-                        <h4 class="mb-3">Medical Treatment</h4>
-                        <p class="mb-4">Bringing healing, hope, and care to those without access to proper treatment.</p>
-                        <a class="btn btn-outline-primary px-3" href="">
-                            Learn More
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                    </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Healthcare Initiatives Service -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.15s">
+        <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+            <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+            <h4 class="mb-3">Healthcare Initiatives</h4>
+            <p class="mb-4">Bringing healing, hope, and care to those without access to proper treatment.</p>
+            <button class="btn btn-outline-primary px-3" data-bs-toggle="modal" data-bs-target="#modalHelthcare">
+                Learn More
+                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                    <i class="fa fa-arrow-right"></i>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
-                        <h4 class="mb-3">Fresh Food</h4>
-                        <p class="mb-4">Sharing fresh, nutritious meals to bring health and hope to every table.</p>
-                        <a class="btn btn-outline-primary px-3" href="">
-                            Learn More
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                    </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Community Outreach Service -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+            <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
+            <h4 class="mb-3">Community Outreach</h4>
+            <p class="mb-4">Supporting and empowering local communities through events, mentorship, and essential aid.</p>
+            <button class="btn btn-outline-primary px-3" data-bs-toggle="modal" data-bs-target="#modalCommunity">
+                Learn More
+                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                    <i class="fa fa-arrow-right"></i>
                 </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Environment & Sustainability Service -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.25s">
+        <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+            <img class="img-fluid mb-4" src="img/icon-4.png" alt="">
+            <h4 class="mb-3">Environment & Sustainability</h4>
+            <p class="mb-4">Promoting eco-friendly practices through tree planting, cleanups, recycling, and community education.</p>
+            <button class="btn btn-outline-primary px-3" data-bs-toggle="modal" data-bs-target="#modalEnvironment">
+                Learn More
+                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Women Empowerment Service -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+            <img class="img-fluid mb-4" src="img/icon-5.png" alt="">
+            <h4 class="mb-3">Women Empowerment</h4>
+            <p class="mb-4">Supporting women through skill development, mentorship, and awareness programs to boost confidence and independence.</p>
+            <button class="btn btn-outline-primary px-3" data-bs-toggle="modal" data-bs-target="#modalWomen">
+                Learn More
+                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Arts, Culture & Sports Service -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.35s">
+        <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+            <img class="img-fluid mb-4" src="img/icon-6.png" alt="">
+            <h4 class="mb-3">Arts, Culture & Sports</h4>
+            <p class="mb-4">Fostering creativity, teamwork, and healthy lifestyles through arts, cultural workshops, and sports activities.</p>
+            <button class="btn btn-outline-primary px-3" data-bs-toggle="modal" data-bs-target="#modalArts">
+                Learn More
+                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Disaster Relief & Emergency Response -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+            <img class="img-fluid mb-4" src="img/icon-7.png" alt="">
+            <h4 class="mb-3">Disaster Relief & Emergency Response</h4>
+            <p class="mb-4">Providing immediate aid, rescue support, and essential resources to communities during emergencies.</p>
+            <button class="btn btn-outline-primary px-3" data-bs-toggle="modal" data-bs-target="#modalRelief">
+                Learn More
+                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Fundraising & Campaign Support Response -->
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.45s">
+        <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+            <img class="img-fluid mb-4" src="img/icon-8.png" alt="">
+            <h4 class="mb-3">Fundraising & Campaign Support</h4>
+            <p class="mb-4">Driving donations and awareness to sustain programs through events, campaigns, and donor engagement.</p>
+            <button class="btn btn-outline-primary px-3" data-bs-toggle="modal" data-bs-target="#modalFundraising">
+                Learn More
+                <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- Modals -->
+<!-- Child Education Modal -->
+<div class="modal fade" id="modalChildEducation" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Child Education</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/icon-1.png" class="img-fluid mb-3" alt="">
+        
+        <div>
+            <p><strong>Purpose:</strong> Ensure street children receive quality education and learning opportunities.</p>
+
+            <p><strong>Volunteer Activities:</strong></p>
+            <ul>
+                <li>Teaching literacy and numeracy in informal classrooms.</li>
+                <li>Creating engaging educational materials and activities.</li>
+                <li>Mentoring children for personal and emotional development.</li>
+                <li>Organizing workshops, reading sessions, and skill-building activities.</li>
+            </ul>
+
+            <p><strong>Impact:</strong> Improves literacy, builds confidence, and opens future opportunities for vulnerable children.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Helthcare Modal -->
+<div class="modal fade" id="modalHelthcare" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Medical Treatment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/icon-2.png" class="img-fluid mb-3" alt="">
+        
+        <div>
+            <p><strong>Purpose:</strong> Provide essential healthcare access to underprivileged populations.</p>
+
+            <p><strong>Volunteer Activities:</strong></p>
+            <ul>
+                <li>Assisting in medical camps and health check-up drives.</li>
+                <li>Coordinating patient registration and queue management.</li>
+                <li>Educating communities about hygiene, nutrition, and preventive care.</li>
+                <li>Supporting vaccination and first-aid programs.</li>
+            </ul>
+
+            <p><strong>Impact:</strong> Reduces health risks, spreads awareness, and improves overall community wellbeing.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Community Modal -->
+<div class="modal fade" id="modalCommunity" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Fresh Food</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/icon-3.png" class="img-fluid mb-3" alt="">
+        
+
+        <div>
+            <p><strong>Purpose:</strong> Engage directly with local communities to address their immediate needs.</p>
+
+            <p><strong>Volunteer Activities:</strong></p>
+            <ul>
+                <li>Organizing awareness campaigns on social issues (health, hygiene, education).</li>
+                <li>Coordinating community events and drives.</li>
+                <li>Mentoring and supporting local youth initiatives.</li>
+                <li>Assisting in distribution of essential items like food, clothes, and supplies.</li>
+            </ul>
+
+            <p><strong>Impact:</strong> Strengthens community ties, empowers residents, and raises awareness of social challenges.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Environment Modal -->
+<div class="modal fade" id="modalEnvironment" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Fresh Food</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/icon-3.png" class="img-fluid mb-3" alt="">
+        
+
+        <div>
+            <p><strong>Purpose:</strong> Promote eco-friendly practices and environmental awareness.</p>
+
+            <p><strong>Volunteer Activities:</strong></p>
+            <ul>
+                <li>Tree plantation drives and green-space cleanups.</li>
+                <li>Waste segregation and recycling initiatives.</li>
+                <li>Educating communities on sustainable practices.</li>
+                <li>Monitoring local environmental issues and reporting solutions.</li>
+            </ul>
+
+            <p><strong>Impact:</strong> Enhances environmental health, raises eco-consciousness, and reduces pollution locally.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Women Modal -->
+<div class="modal fade" id="modalWomen" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Fresh Food</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/icon-3.png" class="img-fluid mb-3" alt="">
+        
+
+            <div>
+                <p><strong>Purpose:</strong> Support women’s education, skill development, and economic independence.</p>
+
+                <p><strong>Volunteer Activities:</strong></p>
+                <ul>
+                    <li>Conducting workshops on entrepreneurship, digital literacy, and vocational skills.</li>
+                    <li>Mentoring women in personal and professional development.</li>
+                    <li>Organizing awareness campaigns on rights, health, and safety.</li>
+                </ul>
+
+                <p><strong>Impact:</strong> Strengthens confidence, skillsets, and economic opportunities for women.</p>
             </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Arts Modal -->
+<div class="modal fade" id="modalArts" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Fresh Food</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/icon-3.png" class="img-fluid mb-3" alt="">
+        
+
+        <div>
+            <p><strong>Purpose:</strong> Encourage creative expression and physical activity among youth.</p>
+
+            <p><strong>Volunteer Activities:</strong></p>
+            <ul>
+                <li>Organizing art, music, and cultural workshops.</li>
+                <li>Coaching or facilitating sports events and competitions.</li>
+                <li>Mentoring young talent and showcasing community skills.</li>
+            </ul>
+
+            <p><strong>Impact:</strong> Builds creativity, teamwork, confidence, and healthy lifestyles.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Relief Modal -->
+<div class="modal fade" id="modalRelief" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Fresh Food</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/icon-3.png" class="img-fluid mb-3" alt="">
+        
+
+            <div>
+                <p><strong>Purpose:</strong> Assist communities during natural disasters and emergencies.</p>
+
+                <p><strong>Volunteer Activities:</strong></p>
+                <ul>
+                    <li>Supporting logistics for relief distribution.</li>
+                    <li>Assisting in evacuation, rescue, and rehabilitation efforts.</li>
+                    <li>Providing first aid and essential resources to affected populations.</li>
+                </ul>
+
+                <p><strong>Impact:</strong> Reduces suffering, provides immediate relief, and strengthens community resilience.</p>
+            </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Fundraising Modal -->
+<div class="modal fade" id="modalFundraising" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Fresh Food</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/icon-3.png" class="img-fluid mb-3" alt="">
+        
+
+        <div>
+            <p><strong>Purpose:</strong> Help secure resources to sustain SYC programs.</p>
+
+            <p><strong>Volunteer Activities:</strong></p>
+            <ul>
+                <li>Organizing donation drives and charity events.</li>
+                <li>Managing social media campaigns for awareness and fundraising.</li>
+                <li>Supporting event logistics and donor engagement.</li>
+            </ul>
+
+            <p><strong>Impact:</strong> Ensures continuity of programs and enables broader community reach.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
         </div>
     </div>
     <!-- Service End -->
@@ -186,17 +532,23 @@
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
                     <a class="btn btn-link" href="service.html">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="gallery.html">Our Gallery</a>
+                    <a class="btn btn-link" href="terms.html">Terms & Condition</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Join our newsletter to stay updated on our missions, stories, and ways to make a difference.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+    <h5 class="text-light mb-4">Newsletter</h5>
+    <p>Join our newsletter to stay updated on our missions, stories, and ways to make a difference.</p>
+    
+    <form id="newsletterForm" action="https://formspree.io/f/mblznbwn" method="POST" class="newsletter-form mx-auto" style="max-width: 400px;">
+        <input class="form-control" type="email" name="email" placeholder="Your email" required>
+        <button type="submit" class="btn btn-outline-secondary">Sign Up</button>
+    </form>
+    
+    <div id="thankYouMessage" style="display: none; margin-top: 10px; color: #fff;">
+        Thank you for subscribing!
+    </div>
+</div>
+
             </div>
         </div>
         <div class="container-fluid copyright">
