@@ -5,130 +5,64 @@
     <meta charset="utf-8">
     <title>Share Your Closet - Gallery</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Share Your Closet Gallery" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Icon Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Libraries -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap & Main CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- Custom Styles -->
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 
-        .gallery-item {
-            overflow: hidden;
-            border-radius: 10px;
-            transition: transform 0.5s;
-        }
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
 
-        .gallery-img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
+</head>
 
-        .gallery-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            transition: 0.5s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
-        }
-
-        .gallery-overlay a {
-            color: #fff;
-            font-size: 24px;
-            background: #050505;
-            padding: 10px 15px;
-            border-radius: 50%;
-            transition: 0.3s;
-        }
-
-        .gallery-overlay a:hover {
-            background: #050505;
-            color: #fff;
-        }
-
-        .page-header {
-            background: url('img/carousel-1.jpg') center center no-repeat;
-            background-size: cover;
-            position: relative;
-            height: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .page-header h1 {
-            color: #fff;
-            font-size: 3rem;
-            z-index: 2;
-        }
-
-        .page-header::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-    </style>
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
+
 
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>House 41, Road 01, Block I, Banani, Dhaka-1213, Bangladesh</small>
+                <small><i class="fa fa-map-marker-alt me-2"></i>House 41, Road 01, Block I, Banani, Dhaka-1213,
+                    Bangladesh</small>
                 <small class="ms-4"><i class="fa fa-envelope me-2"></i>shareyourcloset.org@gmail.com</small>
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
-                <a class="text-white-50 ms-3" href="https://www.facebook.com/share/1RMSFbqSik/"><i class="fab fa-facebook-f"></i></a>
-                <a class="text-white-50 ms-3" href="https://www.linkedin.com/company/share-your-closet/"><i class="fab fa-linkedin-in"></i></a>
-                <a class="text-white-50 ms-3" href="https://www.instagram.com/shareyourcloset.bd?igsh=Y2FyOWNwNzZod2R3"><i class="fab fa-instagram"></i></a>
+                <a class="text-white-50 ms-3" href="https://www.facebook.com/share/1RMSFbqSik/"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="text-white-50 ms-3" href="https://www.linkedin.com/company/share-your-closet/"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="text-white-50 ms-3"
+                    href="https://www.instagram.com/shareyourcloset.bd?igsh=Y2FyOWNwNzZod2R3"><i
+                        class="fab fa-instagram"></i></a>
             </div>
         </div>
 
@@ -136,22 +70,23 @@
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0 d-flex align-items-center">
                 <img src="img/logo.png" alt="Share Your Closet Logo" style="height: 70px;">
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About Us</a>
                     <a href="causes.html" class="nav-item nav-link">Causes</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
                             <a href="service.html" class="dropdown-item">Service</a>
                             <a href="donate.html" class="dropdown-item">Donate</a>
                             <a href="team.html" class="dropdown-item">Our Team</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="gallery.html" class="dropdown-item">Gallery</a>
+                            <a href="gallery.html" class="dropdown-item active">Gallery</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact Us</a>
@@ -167,168 +102,92 @@
             </div>
         </nav>
     </div>
+    <!-- Navbar End -->
 
-    <!-- Page Header -->
-        <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center">
             <h1 class="display-4 text-white animated slideInDown mb-4">Our Gallery</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-light active" aria-current="page">Our Gallery</li>
+                    <li class="breadcrumb-item text-light active" aria-current="page">Gallery</li>
                 </ol>
             </nav>
         </div>
     </div>
+    <!-- Page Header End -->
 
-    <!-- Gallery Section -->
+
+    <!-- Gallery Section Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-4">
-                <!-- Gallery Item Example -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-1.jpg" alt="Gallery Image 1">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-1.jpg" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-2.jpg" alt="Gallery Image 2">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-2.jpg" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-3.jpg" alt="Gallery Image 3">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-3.jpg" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more images here -->
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-4.jpg" alt="Gallery Image 4">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-4.jpg" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-5.png" alt="Gallery Image 5">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-5.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-6.png" alt="Gallery Image 6">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-6.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-7.png" alt="Gallery Image 7">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-7.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-8.png" alt="Gallery Image 8">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-8.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-9.png" alt="Gallery Image 9">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-9.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.10s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-10.png" alt="Gallery Image 10">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-10.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.11s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-11.png" alt="Gallery Image 11">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-11.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.12s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-12.png" alt="Gallery Image 12">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-12.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.13s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-13.png" alt="Gallery Image 13">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-13.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.14s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-14.png" alt="Gallery Image 14">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-14.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.15s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-15.png" alt="Gallery Image 15">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-15.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.16s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-16.png" alt="Gallery Image 16">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-16.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.17s">
-                    <div class="position-relative gallery-item">
-                        <img class="gallery-img" src="img/gallery/gallery-17.png" alt="Gallery Image 17">
-                        <div class="gallery-overlay">
-                            <a href="img/gallery/gallery-17.png" data-lightbox="gallery"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Sweet Moments</div>
+                <h1 class="mb-4">Moments That Inspire Change</h1>
             </div>
+
+            <div class="gallery-grid">
+            <!-- 17 images example -->
+            <a href="img/gallery/gallery-1.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.1s">
+                <img src="img/gallery/gallery-1.webp" alt="Gallery Image 1">
+            </a>
+            <a href="img/gallery/gallery-2.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.15s">
+                <img src="img/gallery/gallery-2.webp" alt="Gallery Image 2">
+            </a>
+            <a href="img/gallery/gallery-3.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.2s">
+                <img src="img/gallery/gallery-3.webp" alt="Gallery Image 3">
+            </a>
+            <a href="img/gallery/gallery-4.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.25s">
+                <img src="img/gallery/gallery-4.webp" alt="Gallery Image 4">
+            </a>
+            <a href="img/gallery/gallery-5.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.3s">
+                <img src="img/gallery/gallery-5.webp" alt="Gallery Image 5">
+            </a>
+            <a href="img/gallery/gallery-6.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.35s">
+                <img src="img/gallery/gallery-6.webp" alt="Gallery Image 6">
+            </a>
+            <a href="img/gallery/gallery-7.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.4s">
+                <img src="img/gallery/gallery-7.webp" alt="Gallery Image 7">
+            </a>
+            <a href="img/gallery/gallery-8.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.45s">
+                <img src="img/gallery/gallery-8.webp" alt="Gallery Image 8">
+            </a>
+            <a href="img/gallery/gallery-9.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.5s">
+                <img src="img/gallery/gallery-9.webp" alt="Gallery Image 9">
+            </a>
+            <a href="img/gallery/gallery-10.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.55s">
+                <img src="img/gallery/gallery-10.webp" alt="Gallery Image 10">
+            </a>
+            <a href="img/gallery/gallery-11.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.6s">
+                <img src="img/gallery/gallery-11.webp" alt="Gallery Image 11">
+            </a>
+            <a href="img/gallery/gallery-12.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.65s">
+                <img src="img/gallery/gallery-12.webp" alt="Gallery Image 12">
+            </a>
+            <a href="img/gallery/gallery-13.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.7s">
+                <img src="img/gallery/gallery-13.webp" alt="Gallery Image 13">
+            </a>
+            <a href="img/gallery/gallery-14.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.75s">
+                <img src="img/gallery/gallery-14.webp" alt="Gallery Image 14">
+            </a>
+            <a href="img/gallery/gallery-15.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.8s">
+                <img src="img/gallery/gallery-15.webp" alt="Gallery Image 15">
+            </a>
+            <a href="img/gallery/gallery-16.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.85s">
+                <img src="img/gallery/gallery-16.webp" alt="Gallery Image 16">
+            </a>
+            <a href="img/gallery/gallery-17.webp" data-lightbox="sharegallery" class="gallery-item wow fadeInUp" data-wow-delay="0.9s">
+                <img src="img/gallery/gallery-17.webp" alt="Gallery Image 17">
+            </a>
+        </div>
         </div>
     </div>
+    <!-- Gallery Section End -->
 
-    <!-- Footer -->
+
+    <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -336,16 +195,23 @@
                     <div class="mb-4">
                         <img src="img/logo_f.png" alt="Share Your Closet Logo" style="height: 150px;">
                     </div>
-                    <p>Bringing hope and support to marginalized communities through donations, education, and essential resources.</p>
+                    <p>Bringing hope and support to marginalized communities through donations, education, and essential
+                    resources.</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square me-1" href="https://www.facebook.com/share/1RMSFbqSik/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square me-1" href="https://www.instagram.com/shareyourcloset.bd?igsh=Y2FyOWNwNzZod2R3"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square me-0" href="https://www.linkedin.com/company/share-your-closet/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square me-1" href="https://www.facebook.com/share/1RMSFbqSik/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1"
+                            href="https://www.instagram.com/shareyourcloset.bd?igsh=Y2FyOWNwNzZod2R3"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square me-0"
+                            href="https://www.linkedin.com/company/share-your-closet/"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Address</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>House 41, Road 01, Block I, Banani, Dhaka-1213, Bangladesh</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>House 41, Road 01, Block I, Banani, Dhaka-1213,
+                        Bangladesh</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+8801730-713994</p>
                     <p><i class="fa fa-envelope me-3"></i>shareyourcloset.org@gmail.com</p>
                 </div>
@@ -354,27 +220,34 @@
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
                     <a class="btn btn-link" href="service.html">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="gallery.html">Our Gallery</a>
+                    <a class="btn btn-link" href="terms.html">Terms & Condition</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Join our newsletter to stay updated on our missions, stories, and ways to make a difference.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+    <h5 class="text-light mb-4">Newsletter</h5>
+    <p>Join our newsletter to stay updated on our missions, stories, and ways to make a difference.</p>
+    
+    <form id="newsletterForm" action="https://formspree.io/f/mblznbwn" method="POST" class="newsletter-form mx-auto" style="max-width: 400px;">
+        <input class="form-control" type="email" name="email" placeholder="Your email" required>
+        <button type="submit" class="btn btn-outline-secondary">Sign Up</button>
+    </form>
+    
+    <div id="thankYouMessage" style="display: none; margin-top: 10px; color: #fff;">
+        Thank you for subscribing!
+    </div>
+</div>
+
             </div>
         </div>
         <div class="container-fluid copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#"></a>All Right Reserved.
+                        &copy; All Rights Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        Designed & Developed By <a href="https://www.linkedin.com/company/black-box-tech-ltd/">Black Box Tech Ltd.</a>
+                        Designed & Developed By <a
+                            href="https://www.linkedin.com/company/black-box-tech-ltd/">Black Box Tech Ltd.</a>
                     </div>
                 </div>
             </div>
@@ -382,8 +255,10 @@
     </div>
     <!-- Footer End -->
 
+
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -392,15 +267,10 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
+    <!-- Main JS -->
     <script src="js/main.js"></script>
-
-    <!-- Template Javascript -->
-    <script>
-        new WOW().init();
-    </script>
 </body>
 
 </html>
