@@ -159,33 +159,41 @@
 
     // ===== Counter Animation =====
     const counters = document.querySelectorAll('.counter');
-    const speed = 200;
+const speed = 200;
 
-    const startCounting = (counter) => {
-        const updateCount = () => {
-            const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText.replace(/\D/g, '');
-            const increment = target / speed;
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment).toLocaleString();
-                setTimeout(updateCount, 20);
-            } else {
+const startCounting = (counter) => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText.replace(/\D/g, '');
+        const increment = target / speed;
+
+        if (count < target) {
+            counter.innerText = Math.ceil(count + increment).toLocaleString();
+            setTimeout(updateCount, 20);
+        } else {
+            // Add '+' only if this counter has class 'plus-sign'
+            if (counter.classList.contains('plus-sign')) {
                 counter.innerText = target.toLocaleString() + '+';
+            } else {
+                counter.innerText = target.toLocaleString();
             }
-        };
-        updateCount();
+        }
     };
+    updateCount();
+};
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                startCounting(entry.target);
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.6 });
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounting(entry.target);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.6 });
 
-    counters.forEach(counter => observer.observe(counter));
+counters.forEach(counter => observer.observe(counter));
+
+    
 
     // ===== Newsletter AJAX Submission =====
     const newsletterForm = document.getElementById('newsletterForm');
@@ -321,3 +329,4 @@
     });
 
 })(jQuery);
+
