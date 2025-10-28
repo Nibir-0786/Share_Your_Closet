@@ -1071,6 +1071,34 @@ body.terms-body {
 
 
 
+/* ================================
+   Reports Page Styles
+=================================== */
+.reports-section {
+    background-color: #f9f9f9;
+}
+
+.report-card {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.report-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.report-card img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.report-card:hover img {
+    filter: grayscale(0%);
+}
+
+
+
 
 
 /*** Footer ***/
@@ -1125,3 +1153,4 @@ body.terms-body {
     color: var(--secondary);
 
 }
+
