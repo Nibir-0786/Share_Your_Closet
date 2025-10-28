@@ -328,5 +328,18 @@ counters.forEach(counter => observer.observe(counter));
         }
     });
 
+
+// WOW Animation Init
+new WOW().init();
+
+// Optional: Smooth scroll reveal for reports
+document.querySelectorAll('.report-card').forEach((card) => {
+    card.addEventListener('mouseenter', () => card.classList.add('shadow-lg'));
+    card.addEventListener('mouseleave', () => card.classList.remove('shadow-lg'));
+});
+
+    
+
 })(jQuery);
+
 
